@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dziennik praktyki zawodowej</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="zajecia.html">Dziennik zajęć</a></li>
+                <li><a href="podsumowanie.html">Podsumowanie</a></li>
+            </ul>
+        </nav>
+        <main>
+            
+            <form id="form">
+                <label for="name">Imię:<input type="text" name="name" id="name" required></label>
+                <label for="surname">Nazwisko:<input type="text" name="surname" id="surname" required></label>
+                <label for="klasa">Klasa:<input type="text" name="klasa" id="klasa" required></label>
+                <label for="rok_szk">Rok szkolny:<input type="text" name="rok_szk" id="rok_szk" required></label>
+                <label for="place">Odbytej w:<input type="text" name="place" id="place" required></label>
+                <fieldset>
+                    <legend>Czas trwania praktyki</legend>
+                    <label for="start_date">Data rozpoczęcia: <input type="date" name="start_date" id="start_date" required></label>
+                    <label for="end_date">Data zakończenia: <input type="date" name="end_date" id="end_date" required></label>
+                </fieldset>
+                <input type="submit" value="zatwierdź">
+            </form>
+
+        </main>
+        <section id="metryka"  class="hidden">
+           <h2>Dane ucznia</h2>
+           <p id="namesurname">Imię i nazwisko:</p>
+           <p id="klasarokszk">Klasa: Rok szkolny: </p>
+           <p id="place">Odbytej w: </p>
+           <p id="start_end_date">Odbytej w terminie: od do </p>
+           <button id="edit">Edit</button>
+        </section>
+        <footer>
+            <p>&COPY;ja</p>
+        </footer>
+        
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>

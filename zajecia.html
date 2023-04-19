@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    <script src="teachingProgram.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dziennik praktyki zawodowej</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="zajecia.html">Dziennik zajęć</a></li>
+                <li><a href="podsumowanie.html">Podsumowanie</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Realizacja Materiału</h2>
+            <form>
+            <fieldset>
+                <Legend>Informacja o zajęciach</Legend>
+                    <label for="data">Wybierz datę zajęć:<input type="date"></label>
+                    <label for="dział" >Wybierz temat:
+                        <select name="dzial" id="dzial" style="width: 300px;">
+                            <option>    </option>
+                        </select>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Opiekun</legend>
+                <label for="opiekun" id="opiekun">
+                    Leszek Galat <input type="radio" name="opiekun">
+                    Tomasz Ochęduszko<input type="radio" name="opiekun">
+                    Klaudiusz Czerny<input type="radio" name="opiekun">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Realizacja materiału</legend>
+                <label for="raport">Sprawozdanie: <textarea name="raport" id="raport" cols="60" rows="10"></textarea></label>
+                <label for="done">zrealizowano: <input type="checkbox" id="done"></label>
+                <label for="time">Ile godzin: <input type="text" id="time" style="width:200pxl"></label>
+                <label for="lvl">Stopień opanowania materiału: 1<input type="range" min="1" max="6" step="1" id="lvl">6
+                </label>
+                
+            </fieldset>
+                <input type="reset" value="wyczyść">
+                <input type="submit" value="dodaj">
+        </form>
+        <div class="display">
+        <h2>Zrealizowane tematy</h2>
+        </div>
+        </main>
+    </div>
+    <script> 
+    
+    </script>
+</body>
+</html> 
