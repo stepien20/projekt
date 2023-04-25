@@ -21,8 +21,12 @@ a:hover{
     background-color: #aaa;
 }
 body{
+
     display: flex;
     justify-content: center;
+
+    background: rgb(0,7,255);
+    background: linear-gradient(283deg, rgba(0,7,255,0.3) 0%, rgba(0,116,166,0.31817233729429273) 32%, rgba(0,143,100,0.36018914401698177) 63%, rgba(0,255,66,0.3) 100%);
 }
 .container{
     width: 80%;
@@ -32,17 +36,19 @@ header{
 }
 form{
     margin: 1rem;
-    border: 1px solid #000;
+    border: 3px solid #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-grow: 1;
 }
 label{
+    
     flex-basis: 35%;
     padding: 1rem;
 }
 fieldset{
+    border: 2px solid #000;
     margin: 1rem;
     width: 100%;
     padding: 1rem;
@@ -51,7 +57,7 @@ footer{
     text-align: center;
 }
 body>*{
-border: 1px solid #000;
+border: 3px solid #000;
 }
 #opiekun>*{
     
@@ -68,13 +74,23 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000;
+    border: 3px solid #000;
     margin: 1rem;
     padding: 0.5rem;
 
 }
 
+select{
+    margin: 0.5rem;
+    width: 400px;
+}
 
+input[type="submit"], input[type="reset"]{
+    margin: 0.5rem;
+} 
+i{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .hidden{
     display: none;
 }
