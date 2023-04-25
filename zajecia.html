@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="main.css">
     <script src="teachingProgram.js"></script>
+    <script src="logbook.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -26,9 +27,14 @@
             <fieldset>
                 <Legend>Informacja o zajęciach</Legend>
                     <label for="data">Wybierz datę zajęć:<input type="date"></label>
-                    <label for="dział" >Wybierz temat:
+                    <label for="dział" >Wybierz dział:
                         <select name="dzial" id="dzial" style="width: 300px;">
-                            <option>    </option>
+
+                        </select>
+                    </label>
+                    <label for="temat">Wybierz temat:
+                        <select name="temat" id="temat">
+                            <option value=""></option>
                         </select>
                     </label>
             </fieldset>
@@ -57,8 +63,6 @@
         </div>
         </main>
     </div>
-    <script> 
-    
-    </script>
+
 </body>
 </html> 
