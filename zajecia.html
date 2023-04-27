@@ -26,12 +26,12 @@
             <form>
             <fieldset>
                 <Legend>Informacja o zajęciach</Legend>
-                    <label for="data">Wybierz datę zajęć:<input type="date"></label>
+                    <label for="data">Wybierz datę zajęć:<input type="date" id="data"></label>
                     <label for="dział" >Wybierz dział:
                         <select name="dzial" id="dzial" style="width: 300px;">
 
                         </select>
-                    </label>
+                    </label><br>
                     <label for="temat">Wybierz temat:
                         <select name="temat" id="temat">
                             <option value=""></option>
@@ -41,15 +41,15 @@
             <fieldset>
                 <legend>Opiekun</legend>
                 <label for="opiekun" id="opiekun">
-                    Leszek Galat <input type="radio" name="opiekun" checked>
-                    Tomasz Ochęduszko<input type="radio" name="opiekun">
-                    Klaudiusz Czerny<input type="radio" name="opiekun">
+                    Leszek Galat <input type="radio" name="opiekun"  id="Leszek Galat" checked>
+                    Tomasz Ochęduszko<input type="radio" name="opiekun" id="Tomasz Ochęduszko">
+                    Klaudiusz Czerny<input type="radio" name="opiekun" id="Klaudiusz Czerny">
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Realizacja materiału</legend>
                 <label for="raport">Sprawozdanie: <textarea name="raport" id="raport" cols="60" rows="10"></textarea></label>
-                <label for="done">zrealizowano: <input type="checkbox" id="done"></label>
+                <label for="done">zrealizowano: <input type="checkbox" id="done" id="tak"></label>
                 <label for="time">Ile godzin: <input type="text" id="time" style="width:200pxl"></label>
                 <label for="lvl">Stopień opanowania materiału: 1<input type="range" min="1" max="6" step="1" id="lvl">6
                 </label>
